@@ -1,12 +1,15 @@
 {
   "name": "18_webpack",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "homepage": "https://vzalesinski.github.io/Donates-web-page/",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack serve --env development",
-    "prod": "webpack serve --env production"
+    "prod": "webpack serve --env production",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +28,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "moment": "^2.29.1"
   }
 }

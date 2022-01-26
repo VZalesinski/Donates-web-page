@@ -5,13 +5,13 @@ module.exports = ({ development }) => ({
   mode: development ? "development" : "production",
   entry: `${__dirname}/index.js`,
   devServer: {
-    contentBase: `${__dirname}/dist`,
+    contentBase: `${__dirname}/build`,
     open: true,
     compress: true,
     port: 8000,
   },
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/build`,
     filename: "bundle.js",
   },
   plugins: [
